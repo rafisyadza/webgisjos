@@ -88,8 +88,8 @@ var symbologyPoint = {
 }
 
 const jembatanPT = new L.LayerGroup()
-$.getJSON("./asset/data-spasial/jembatan_pt.geojson", (OBJECTID) => {
-  L.geoJSON(OBJECTID, {
+$.getJSON("./asset/data-spasial/jembatan_pt.geojson", (data) => {
+  L.geoJSON(data, {
     pointToLayer: (feature, latlng) => L.circleMarker(latlng, symbologyPoint),
   }).addTo(jembatanPT)
 })
@@ -97,8 +97,8 @@ jembatanPT.addTo(map)
 
 // Add line data - Batas Administrasi Kelurahan (Administrative Boundaries)
 const adminKelurahanAR = new L.LayerGroup()
-$.getJSON("./asset/data-spasial/admin_kelurahan_ln.geojson", (OBJECTID) => {
-  L.geoJSON(OBJECTID, {
+$.getJSON("./asset/data-spasial/admin_kelurahan_ln.geojson", (data) => {
+  L.geoJSON(data, {
     style: {
       color: "black",
       weight: 2,
@@ -112,8 +112,8 @@ adminKelurahanAR.addTo(map)
 
 // Add polygon data - Tutupan Lahan (Land Cover)
 const landcover = new L.LayerGroup()
-$.getJSON("./asset/data-spasial/landcover_ar.geojson", (REMARK) => {
-  L.geoJson(REMARK, {
+$.getJSON("./asset/data-spasial/landcover_ar.geojson", (data) => {
+  L.geoJson(data, {
     style: (feature) => {
       switch (feature.properties.REMARK) {
         case "Danau/Situ":
