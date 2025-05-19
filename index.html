@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSIB BANDUNG</title>
+    <link rel="stylesheet" href="style.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-
+button.css">
+
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-
+fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+
+<link rel="stylesheet" href="https://balladaniel.github.io/leaflet-dataclassification/leaflet-
+dataclassification.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-
+20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-
+fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js"
+charset="utf-8"></script>
+
+<script src="https://balladaniel.github.io/leaflet-dataclassification/leaflet-
+dataclassification.js"></script>
+</head>
+<body>
+    <header id="navbar">
+        <div class="container">
+        <div class="logo">
+        <img src="asset/LogoPSB.png" alt="Logo" width="100">
+        <h1>PERSIB BANDUNG</h1>
+        </div>
+        <nav>
+        <ul>
+        <li><a href="#hero-section">Home</a></li>
+        <li><a href="#map-section">Map</a></li>
+        <li><a href="#data-section">Data</a></li>
+        <li><a href="#author-section">Author</a></li>
+        <li><a href="#footer">Contact</a></li>
+        </ul>
+        </nav>
+        </div>
+        </header>
+        <!--Hero Section-->
+        <div id="hero-section" class="hero-section">
+            <div class="hero-content">
+            <h1>Web Mengenai Sejarah Persib Bandung</h1>
+            <p>Halaman untuk Melakukan Eksplorasi Persib Bandung</p>
+            </div>
+        <!--Map Section--> 
+            </div>
+            <div id="map-section">
+                <h2>Jelajahi Web Persib Bandung</h2>
+                <div id="map">
+                <!-- akan muncul peta disini -->
+                </div>
+                </div>
+                
+                <!--Data Section--> 
+                <div id="data-section"> 
+                    <h2>Data Tersedia</h2> 
+                    <div class="container"> 
+                        <div class="column"> 
+                            <div class="data-item"> 
+                                <img src="asset/Persib Bandung.jpg"> 
+                                <div class="description"> 
+                                    <h3>PERSIB BANDUNG</h3> 
+                                    <p>Persib Bandung merupakan salah satu klub sepak bola tertua dan paling bersejarah di Indonesia. Didirikan pada 14 Maret 1933, Persib memiliki basis pendukung yang sangat besar dan loyal, dikenal dengan sebutan Bobotoh. Klub ini bermarkas di Kota Bandung, Jawa Barat, dan telah menjadi simbol kebanggaan masyarakat Sunda dalam dunia sepak bola nasional. Selama perjalanannya, Persib telah mencatat berbagai prestasi, termasuk menjuarai Liga Indonesia pada tahun 1994/1995 dan 2014. Identitas kuat, sejarah panjang, dan fanatisme suporter menjadikan Persib bukan sekadar klub sepak bola, melainkan juga bagian penting dari budaya dan identitas masyarakat Jawa Barat.
+
+                                    </p> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="column"> 
+                            <div class="data-item"> 
+                                <img src="asset/Sejarah Persib.jpg" alt="Image 1"> 
+                                <div class="description"> 
+                                    <h3>SEJARAH PERSIB BANDUNG</h3> 
+                                    <p>Persib Bandung didirikan pada 14 Maret 1933 sebagai hasil penggabungan beberapa klub di Bandung. Klub ini menjadi anggota PSSI dan berkembang menjadi salah satu tim kuat di Indonesia. Persib meraih gelar juara nasional pada 1986, 1994/1995, dan 2014. Dikenal dengan basis suporter fanatik seperti Bobotoh dan Viking, Persib menjadi simbol kebanggaan masyarakat Jawa Barat.
+
+                                    </p> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="column"> 
+                            <div class="data-item">     
+                                <img src="asset/Stadion Persib.jpg" alt="Image 1"> 
+                                <div class="description"> 
+                                    <h3>STADION PERSIB BANDUNG</h3> 
+                                    <p>Sebagai salah satu klub besar di Indonesia, Persib Bandung membutuhkan fasilitas stadion yang memadai untuk mendukung kegiatan latihan dan pertandingan resmi. Selama bertahun-tahun, Persib sempat menggunakan beberapa stadion seperti Stadion Siliwangi dan Stadion Si Jalak Harupat sebagai kandangnya. Namun, kebutuhan akan stadion yang representatif dan modern mendorong pembangunan Stadion Gelora Bandung Lautan Api (GBLA) yang mulai digunakan pada 2013. Stadion ini berlokasi di kawasan Gedebage, Kota Bandung, dan mampu menampung lebih dari 38.000 penonton. Dengan fasilitas yang lebih lengkap dan standar internasional, Stadion GBLA kini menjadi simbol kemajuan infrastruktur olahraga di Jawa Barat sekaligus markas kebanggaan bagi Persib dan para suporternya.
+
+                                    </p> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div>
+                </div> 
+
+                <!DOCTYPE html>
+                <html lang="id">
+                <head>
+                  <meta charset="UTF-8">
+                  <title>Contoh JavaScript</title>
+                </head>
+                <body>
+                  <h1>Halo, Dunia!</h1>
+                  <button onclick="tampilkanPesan()">Klik Saya</button>
+                
+                  <script>
+                    function tampilkanPesan() {
+                      alert("Tombol telah diklik!");
+                    }
+                  </script>
+                </body>
+                </html>
+
+                <div id="author-section">     
+                            <div class="author-content"> 
+                                <h2>Tentang Pembuat</h2> 
+                                <img src="asset/Rafi Syadza.JPG" alt="Profile Picture" class="profile-picture"> 
+                                <div class="author-name"> 
+                                    <h3>Rafi Syadza Fauzan</h3> 
+                                </div> 
+                                <p>Rafi Syadza Fauzan adalah mahasiswa sarjana dari Program Studi Sains Informasi Geografi di Universitas Pendidikan Indonesia. Ia tengah mengasah kompetensinya di bidang geospasial, dengan fokus pada pemanfaatan teknologi Sistem Informasi Geografis (SIG), penginderaan jauh, dan pengembangan aplikasi WebGIS. Rafi memiliki ketertarikan khusus terhadap penerapan SIG dalam analisis kebencanaan dan perencanaan wilayah. Dengan semangat eksplorasi dan peningkatan diri, ia berkomitmen untuk menjadi seorang profesional SIG yang adaptif terhadap kemajuan teknologi dan mampu memberikan solusi berbasis spasial secara inovatif.</p> 
+                            </div> 
+                        </div> 
+                        <script src="./js/script.js"></script>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- Fullscreen Plugin JS -->
+<script src="https://unpkg.com/leaflet.fullscreen/Control.FullScreen.js"></script>
+
+<!-- Locate Control JS -->
+<script src="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.js"></script>
+
+
+</body>
+</html>
